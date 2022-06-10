@@ -632,6 +632,12 @@ progress {
   margin-bottom: 0;
 }
 
+.footer{
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+}
+
 .blockquote-footer {
   margin-top: -1rem;
   margin-bottom: 1rem;
@@ -6840,7 +6846,7 @@ fieldset:disabled .btn {
   border-bottom-left-radius: calc(0.75rem - 1px);
 }
 
-.modal-footer>* {
+.modal-footer {
   margin: 0.25rem;
 }
 
