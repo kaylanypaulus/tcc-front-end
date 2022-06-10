@@ -635,6 +635,8 @@ progress {
 .footer{
   position: absolute;
   bottom: 0;
+  margin-left: 20%;
+  margin-right: 0;
   align-items: center;
 }
 
