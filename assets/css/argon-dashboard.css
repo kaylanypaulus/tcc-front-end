@@ -1473,10 +1473,10 @@ progress {
   .offset-md-12 {
     flex: 0 0 auto;
     width: 66.666667%;
-    margin-top: 7%;
+    margin-top: 1%;
     margin-left: 15%;
     margin-right: 15%;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
   }
 
   .g-md-0,
@@ -9335,7 +9335,7 @@ fieldset:disabled .btn {
 }
 
 .ms-13 {
-  margin-left: 28rem !important;
+  margin-left: 18rem !important;
   position: absolute;
 }
 

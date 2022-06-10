@@ -5,6 +5,47 @@ Icon colors
 
 -------------------------------- */
 
+/* --------------------------------
+
+Modal
+
+-------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn{
+color: red ;
+}
+
+.modalsa {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.708);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 10000;
+  display: grid;
+  justify-content: right;
+  align-items: center;
+  visibility: hidden;
+}
+
+.modalsa:target{
+    visibility: visible;
+}
+
+.modalsa__link:hover{
+  background-color: var(--clr-green_hover);
+}
+
+.modalsa__link:active{
+  background-color: var(--clr-green_hover);
+}
+
 .icon {
   display: inline-block;
   /* icon primary color */

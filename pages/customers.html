@@ -130,6 +130,8 @@
       </ul>
     </div>
   </aside>
+
+  <!-- Começo do Main -->
   <main class="main-content position-relative border-radius-lg ">
     <!-- Navbar -->
     <nav class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl " id="navbarBlur"
@@ -138,6 +140,105 @@
         <nav aria-label="breadcrumb">
           <h6 class="font-weight-bolder text-white mb-0">Clientes</h6>
         </nav>
+        <li class="nav-item d-xl-none ps-3 d-flex align-items-center">
+          <a href="javascript:;" class="nav-link text-white p-0" id="iconNavbarSidenav">
+            <div class="sidenav-toggler-inner">
+              <i class="sidenav-toggler-line bg-white"></i>
+            </div>
+          </a>
+        </li>
+        <li class="nav-item dropdown px-3 d-flex align-items-center">
+            <span class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton"></span>
+             <!-- COMEÇO MODAL-->          
+          
+          <a href="#modalsa" class="nav-link text-white font-weight-bold px-0">
+          </span>
+ <a href="#modalsa" class="material-symbols-rounded text-white">add_circle</a>
+<div id="modalsa" class="modalsa">
+  <div class="modal_content">
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="offset-md-12">
+          <div class="card">
+          <div class="card-header pb-0">
+              <div class="d-flex align-items-center"> 
+                <h3 class="mb-0">Cadastrar Fornecedores</h3>
+                <div>
+                  <a href="/pages/providers.html" class="nav-link text-white font-weight-bold px-0">
+                    <a href="#" class="btn btn-primary btn-sm ms-13">Sair</a>
+                  </a> 
+                </div>                          
+              </div>
+          </div>
+          <div class="card-body">
+            <h5 class="text-uppercase text-sm">INFORMAÇÕES PARA CADASTRO</h5>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="example-text-input" class="form-control-label">Nome do Fornecedor</label>
+                  <input class="form-control" type="text" id="supplierName" placeholder="Ex: Miguel Barros">
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="example-text-input" class="form-control-label">Endereço de Email</label>
+                  <input class="form-control" type="email" id="email" placeholder="Ex: migue@example.com">
+                </div>
+              </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="example-text-input" class="form-control-label">CNPJ</label>
+                    <input class="form-control" type="text" id="cnpj" placeholder="Ex: 94.544.663/0001-10">
+                  </div>
+                </div>
+              </div>
+              <hr class="horizontal dark">
+              <h5 class="text-uppercase text-sm">ENDEREÇO COMERCIAL</h5>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="example-text-input" class="form-control-label">Cidade</label>
+                    <input class="form-control" type="text" id="city" placeholder="Ex: Mongaguá">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="example-text-input" class="form-control-label">Bairro</label>
+                    <input class="form-control" type="text" id="district" placeholder="Ex: Jardim Praia Grande">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="example-text-input" class="form-control-label">Rua</label>
+                    <input class="form-control" type="text" id="road" placeholder="Ex: Monteiro Lobato">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="example-text-input" class="form-control-label">Número Comercial</label>
+                    <input class="form-control" type="text"  id="commercialNumber" placeholder="Ex: 1598">
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="example-text-input" class="form-control-label">Telefone Comercial</label>
+                    <input class="form-control" type="tel" id="tel" placeholder="(13) 9999-9999">
+                  </div>
+                </div>
+                <div class="card-header text-center border-0 pt-0 pt-lg-2 pb-4 pb-lg-3">
+                  <div class="d-flex justify-content-between">
+                      <button  onclick="suppliers.toSave()" class="btn btn-sm-2 btn-info mb-0 d-none d-lg-block" id ="btnSaveToAdd" >Adicionar</button>
+                      <button  onclick="suppliers.cancel()" class="btn btn-sm-2 btn-dark float-right mb-0 d-none d-lg-block">Cancelar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <!-- FIM MODAL-->
+         </li>
+        </li>
         <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
             <div class="input-group">
