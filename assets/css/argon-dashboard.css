@@ -5,6 +5,10 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-dark: #363949;
+  --border-radius-1: 0.4rem;
+  
   --bs-blue: #63B3ED;
   --bs-indigo: #596CFF;
   --bs-purple: #6f42c1;
@@ -456,6 +460,16 @@ legend {
 
 legend+* {
   clear: left;
+}
+
+.dateStyle {
+  background: var(--color-light);
+  border-radius: var(--border-radius-1);
+}
+
+.dateStyle input[type="date"] {
+    background: transparent;
+    color: var(--color-dark);
 }
 
 ::-webkit-datetime-edit-fields-wrapper,
@@ -1484,6 +1498,15 @@ progress {
     margin-top: 1%;
     margin-left: 19%;
     margin-right: 19%;
+    margin-bottom: 2%;
+  }
+
+   .offset-md-13 {
+    flex: 0 0 auto;
+    width: 66.666667%;
+    margin-top: 1%;
+    margin-left: 7%;
+    align-items: center;
     margin-bottom: 2%;
   }
 
@@ -9347,14 +9370,31 @@ fieldset:disabled .btn {
   position: absolute;
 }
 
-.ms-auto {
-  margin-left: auto !important;
-}
 .ms-14 {
   margin-right: 22rem !important;
   margin-left: 22rem !important;
   position: absolute;
 }
+
+.ms-15 {
+  margin-left: 16rem !important;
+  position: absolute;
+}
+
+.ms-16 {
+  margin-left: 25rem !important;
+  position: absolute;
+}
+
+.ms-17 {
+  margin-left: 28rem !important;
+  position: absolute;
+}
+
+.ms-auto {
+  margin-left: auto !important;
+}
+
 
 .m-n1 {
   margin: -0.25rem !important;
@@ -21236,6 +21276,11 @@ fieldset:disabled .btn {
 
 .form-group {
   margin-bottom: 1rem;
+}
+
+.form-group-status {
+  margin-bottom: 1rem;
+  display: inline-block;
 }
 
 .form-check:not(.form-switch) .form-check-input[type="checkbox"],

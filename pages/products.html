@@ -146,14 +146,14 @@
   <div class="modal_content">
     <div class="container-fluid py-4">
       <div class="row">
-        <div class="offset-md-12">
+        <div class="offset-md-13">
           <div class="card">
           <div class="card-header pb-0">
               <div class="d-flex align-items-center"> 
-                <h3 class="mb-0">Cadastrar Fornecedores</h3>
+                <h3 class="mb-0">Cadastrar Produtos</h3>
                 <div>
-                  <a href="/pages/providers.html" class="nav-link text-white font-weight-bold px-0">
-                    <a href="#" class="btn btn-primary btn-sm ms-13">Sair</a>
+                  <a href="/pages/products.html" class="nav-link text-white font-weight-bold px-0">
+                    <a href="#" class="btn btn-primary btn-sm ms-15">Sair</a>
                   </a> 
                 </div>                          
               </div>
@@ -163,54 +163,23 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="example-text-input" class="form-control-label">Nome do Fornecedor</label>
-                  <input class="form-control" type="text" id="supplierName" placeholder="Ex: Miguel Barros">
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <label for="example-text-input" class="form-control-label">Endereço de Email</label>
-                  <input class="form-control" type="email" id="email" placeholder="Ex: migue@example.com">
-                </div>
-              </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">CNPJ</label>
-                    <input class="form-control" type="text" id="cnpj" placeholder="Ex: 94.544.663/0001-10">
-                  </div>
+                  <label for="example-text-input" class="form-control-label">Nome do Produto</label>
+                  <input class="form-control" type="text" id="productName" placeholder="Ex: FLANGE SAÍDA DE ÓLEO CURVA">
                 </div>
               </div>
               <hr class="horizontal dark">
-              <h5 class="text-uppercase text-sm">ENDEREÇO COMERCIAL</h5>
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Cidade</label>
-                    <input class="form-control" type="text" id="city" placeholder="Ex: Mongaguá">
+                    <label for="example-text-input" class="form-control-label">Valor Unitário</label>
+                    <input class="form-control" type="number" id="unitaryValue" placeholder="Ex: 29,90">
                   </div>
                 </div>
+                <hr class="horizontal dark">
                 <div class="col-md-4">
                   <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Bairro</label>
-                    <input class="form-control" type="text" id="district" placeholder="Ex: Jardim Praia Grande">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Rua</label>
-                    <input class="form-control" type="text" id="road" placeholder="Ex: Monteiro Lobato">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Número Comercial</label>
-                    <input class="form-control" type="text"  id="commercialNumber" placeholder="Ex: 1598">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Telefone Comercial</label>
-                    <input class="form-control" type="tel" id="tel" placeholder="(13) 9999-9999">
+                    <label for="example-text-input" class="form-control-label">Quantidade em Estoque</label>
+                    <input class="form-control" type="number"  id="qtyStock" placeholder="Ex: 1598">
                   </div>
                 </div>
                 <div class="card-header text-center border-0 pt-0 pt-lg-2 pb-4 pb-lg-3">

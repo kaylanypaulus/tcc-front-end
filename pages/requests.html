@@ -150,10 +150,10 @@
           <div class="card">
           <div class="card-header pb-0">
               <div class="d-flex align-items-center"> 
-                <h3 class="mb-0">Cadastrar Fornecedores</h3>
+                <h3 class="mb-0">Cadastrar Pedidios</h3>
                 <div>
-                  <a href="/pages/providers.html" class="nav-link text-white font-weight-bold px-0">
-                    <a href="#" class="btn btn-primary btn-sm ms-13">Sair</a>
+                  <a href="/pages/requests.html" class="nav-link text-white font-weight-bold px-0">
+                    <a href="#" class="btn btn-primary btn-sm ms-17">Sair</a>
                   </a> 
                 </div>                          
               </div>
@@ -161,62 +161,53 @@
           <div class="card-body">
             <h5 class="text-uppercase text-sm">INFORMAÇÕES PARA CADASTRO</h5>
             <div class="row">
-              <div class="col-md-6">
+              <div class="col-md-4">
                 <div class="form-group">
-                  <label for="example-text-input" class="form-control-label">Nome do Fornecedor</label>
-                  <input class="form-control" type="text" id="supplierName" placeholder="Ex: Miguel Barros">
+                  <label for="example-text-input" class="form-control-label">Data do Pedido</label>
+                  <input class="form-control dateStyle" type="date" id="orderDate" placeholder="(13) 9999-9999">
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="example-text-input" class="form-control-label">Endereço de Email</label>
-                  <input class="form-control" type="email" id="email" placeholder="Ex: migue@example.com">
+                  <label for="example-text-input" class="form-control-label">Nome do Vendedor</label>
+                  <input class="form-control" type="text" id="employeeName" placeholder="Ex: Miguel Barros">
                 </div>
               </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">CNPJ</label>
-                    <input class="form-control" type="text" id="cnpj" placeholder="Ex: 94.544.663/0001-10">
-                  </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="example-text-input" class="form-control-label">Nome do Cliente</label>
+                  <input class="form-control" type="text" id="customerName" placeholder="Ex: Leonardo de Caprio">
                 </div>
               </div>
               <hr class="horizontal dark">
-              <h5 class="text-uppercase text-sm">ENDEREÇO COMERCIAL</h5>
+              <h5 class="text-uppercase text-sm">INFORMAÇÕES DO PRODUTO</h5>
               <div class="row">
                 <div class="col-md-4">
                   <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Cidade</label>
-                    <input class="form-control" type="text" id="city" placeholder="Ex: Mongaguá">
+                    <label for="example-text-input" class="form-control-label">Nome do Produto</label>
+                    <input class="form-control" type="text" id="productName" placeholder="Ex: FLANGE SAÍDA DE ÓLEO CURVA">
                   </div>
                 </div>
                 <div class="col-md-4">
                   <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Bairro</label>
-                    <input class="form-control" type="text" id="district" placeholder="Ex: Jardim Praia Grande">
+                    <label for="example-text-input" class="form-control-label">Valor Total</label>
+                    <input class="form-control" type="number" id="amount" placeholder="Ex: Jardim Praia Grande">
                   </div>
                 </div>
                 <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Rua</label>
-                    <input class="form-control" type="text" id="road" placeholder="Ex: Monteiro Lobato">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Número Comercial</label>
-                    <input class="form-control" type="text"  id="commercialNumber" placeholder="Ex: 1598">
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="form-group">
-                    <label for="example-text-input" class="form-control-label">Telefone Comercial</label>
-                    <input class="form-control" type="tel" id="tel" placeholder="(13) 9999-9999">
+                  <div class="form-group-status">
+                    <label for="status example-text-input" class="form-control-label">Status</label>
+                  </br>
+                    <select name="status" class="form-control" id="status example-text-input">
+                      <option value="paidOut" class="form-control">Pago</option>
+                      <option value="opened"class="form-control">Em Aberto</option>
+                    </select>
                   </div>
                 </div>
                 <div class="card-header text-center border-0 pt-0 pt-lg-2 pb-4 pb-lg-3">
                   <div class="d-flex justify-content-between">
-                      <button  onclick="suppliers.toSave()" class="btn btn-sm-2 btn-info mb-0 d-none d-lg-block" id ="btnSaveToAdd" >Adicionar</button>
-                      <button  onclick="suppliers.cancel()" class="btn btn-sm-2 btn-dark float-right mb-0 d-none d-lg-block">Cancelar</button>
+                      <button  onclick="suppliers.toSave()" type="submit" class="btn btn-sm-2 btn-info mb-0 d-none d-lg-block" id ="btnSaveToAdd" >Adicionar</button>
+                      <button  onclick="suppliers.cancel()" type="reset" class="btn btn-sm-2 btn-dark float-right mb-0 d-none d-lg-block">Cancelar</button>
                   </div>
                 </div>
               </div>
