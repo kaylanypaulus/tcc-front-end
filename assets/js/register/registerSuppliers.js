@@ -150,10 +150,15 @@ class Suppliers{
         tbody.innerText = '';
         for(let i = 0; i < this.arrayProviders.length; i++ ) {
             let tr = tbody.insertRow();
+
+            let colum1 = tr.insertCell();
+            let colum2 = tr.insertCell();
+            let colum3 = tr.insertCell();
+            let colum4 = tr.insertCell();
             
-            let td_supplierName = tr.insertCell();
-            let td_email = tr.insertCell();
-            let td_cnpj = tr.insertCell();
+            //let td_supplierName = tr.insertCell();
+            //let td_email = tr.insertCell();
+            //let td_cnpj = tr.insertCell();
             let td_city = tr.insertCell();
             let td_district = tr.insertCell();
             let td_road = tr.insertCell();
@@ -161,9 +166,12 @@ class Suppliers{
             let td_tel = tr.insertCell();
             let td_actions = tr.insertCell();
 
-            td_supplierName.innerText = this.arrayProviders[i].supplierName;
-            td_email.innerText = this.arrayProviders[i].email;
-            td_cnpj.innerText = this.arrayProviders[i].cnpj;
+            colum1.outerHTML = "<div class="+"d-flex"+"flex-column"+"justify-content-center>" + "<h6 class="+"mb-0"+"text-sm>"+this.arrayProviders[1].supplierName+"</h6>" + "<p class="+"text-xs"+"text-secondary"+"mb-0>"+this.arrayProviders[1].email+"</p>" + "</div>"
+            colum2.outerHTML = "<p class="+"text-xs"+"font-weight-bold"+"mb-0>"+ this.arrayProviders[1].cnpj+"</p>"
+
+            //td_supplierName.innerText = this.arrayProviders[i].supplierName;
+            //td_email.innerText = this.arrayProviders[i].email;
+            //td_cnpj.innerText = this.arrayProviders[i].cnpj;
             td_city.innerText = this.arrayProviders[i].city;
             td_district.innerText = this.arrayProviders[i].district;
             td_road.innerText = this.arrayProviders[i].road;
