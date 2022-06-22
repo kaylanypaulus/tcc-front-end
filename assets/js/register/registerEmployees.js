@@ -171,7 +171,7 @@ class Employe{
     
                 let imgDelete = document.createElement('img');
                 imgDelete.src = '/assets/img/icons/flags/delete.svg';
-                imgDelete.setAttribute("onclick", "custemployeumer.delete("+ this.arrayEmploye[i].id +")");
+                imgDelete.setAttribute("onclick", "employe.delete("+ this.arrayEmploye[i].id +")");
     
                 td_actions.appendChild(imgEdit);
                 td_actions.appendChild(imgDelete);
