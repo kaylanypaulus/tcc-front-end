@@ -29,7 +29,7 @@ class Product{
     }
 
     delete(id, productName) {
-        if(confirm("Deseja realmente deletar os dados do cliente " + productName)) {
+        if(confirm("Deseja realmente deletar os dados do produto " + productName)) {
             let tbody = document.getElementById('tbody');
 
             for(let i = 0; i < this.arrayProduct.length; i++ ) {
